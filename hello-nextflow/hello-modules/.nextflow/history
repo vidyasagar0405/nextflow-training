@@ -1,0 +1,2 @@
+2025-01-04 13:44:18	29.7s	angry_austin	OK	9cbd14647cb131c783ef2e65474251cd	6011806f-3987-44fe-8745-4d2322703616	nextflow run main.nf -profile my_laptop,demo
+2025-01-04 14:07:04	4s	hopeful_archimedes	OK	41273ddb3bd95c17f859e45912b59309	6011806f-3987-44fe-8745-4d2322703616	nextflow run main.nf -profile my_laptop,demo -resume

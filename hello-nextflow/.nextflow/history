@@ -1,0 +1,46 @@
+2024-12-31 15:04:42	4.9s	distracted_curry	ERR	76e1ef2dfd987ea11baf7a0fc6f3d360	5ef4562b-1ad7-4f16-8f32-d93e48111901	nextflow run hello-containers.nf
+2024-12-31 15:09:41	2.6s	astonishing_jones	OK	2e7b9470d64a94b4308932490797c59d	8a23ecc6-d7fc-4486-b4d8-4e33ab2463a7	nextflow run hello-world.nf
+2024-12-31 15:21:52	3.8s	shrivelled_perlman	ERR	b1770ee5d9876b354ed2a99c7df20120	00bcb0d6-eb49-4e4e-89c6-7f496d738b96	nextflow run hello-world.nf
+2024-12-31 15:22:57	3.6s	elegant_meitner	OK	08c9917a56e327ad24f781c5fe278dde	d85877c3-2d03-4ce0-bf18-028355112982	nextflow run hello-world.nf
+2024-12-31 15:28:46	2.4s	nostalgic_church	OK	08c9917a56e327ad24f781c5fe278dde	df474be8-958a-4a7a-912c-35ee24dbe425	nextflow run hello-world.nf
+2024-12-31 15:30:45	2.5s	disturbed_ritchie	OK	8e3be115484d3571831eee1633daa107	a9ef6b11-56bb-4763-ac00-1bf3fe59c14d	nextflow run hello-world.nf
+2024-12-31 15:41:47	2.3s	desperate_faggin	OK	712d7137e105b98d62d21140d4d54fc6	d43f07ca-b640-411e-b4d6-2da86a4b2c0c	nextflow run hello-world.nf
+2024-12-31 15:44:36	3.8s	dreamy_wescoff	OK	3e9938d56abcd3b6a1b0367399ab6632	69564e05-054e-4839-a5ab-31085ebf5850	nextflow run hello-world.nf --greeting 'hello mannextflow run hello-world.nf '
+2024-12-31 15:45:15	2.6s	focused_lamarck	OK	3e9938d56abcd3b6a1b0367399ab6632	d05d9cc7-ba57-4369-a4c4-7290430a2037	nextflow run hello-world.nf --greeting 'hello man'
+2024-12-31 15:46:47	1.9s	trusting_wing	OK	ad1eb9395ec12a20165ac56dae2bf3b4	5ce60a67-14b3-4f56-a7a7-594d6e19d227	nextflow run hello-world.nf
+2024-12-31 15:55:55	5.4s	distracted_jennings	ERR	8bcc9a92a40b9d02f378b447578c40c7	063f40ac-99e1-449a-8379-eb185774499f	nextflow run hello-world.nf
+2024-12-31 15:56:31	3.3s	angry_bohr	ERR	7d087073e28e1b6ca432b84a9a2d148f	d8d2596e-12cb-4892-b8fa-9ff195d784c2	nextflow run hello-world.nf
+2024-12-31 15:57:56	4.5s	extravagant_boltzmann	ERR	25969bd16663da4c73a6f4c030b68cc1	403a8797-a212-4210-a023-0840c363af5f	nextflow run hello-world.nf
+2024-12-31 16:00:05	5.1s	dreamy_roentgen	ERR	25969bd16663da4c73a6f4c030b68cc1	a13a8c37-aa0f-4bd3-a089-0d5851990661	nextflow run hello-world.nf --greeting 'Hello World!'
+2024-12-31 16:02:46	2.6s	clever_snyder	OK	1fe5c18a6c4be47a377aee63985481ba	e624fcd7-865c-48a9-ba36-fedb77aa5474	nextflow run hello-world.nf --greeting 'Hello World!'
+2024-12-31 16:03:50	5.3s	gloomy_cray	ERR	25969bd16663da4c73a6f4c030b68cc1	0e8571ac-d03a-4bc4-a9c8-a2467f4365d5	nextflow run hello-world.nf --greeting 'Hello World!'
+2024-12-31 16:05:09	4s	infallible_minsky	OK	6635ea829288265f9de5e179169f988e	687b51fa-4fb7-429f-a62c-db6b0d96fc6e	nextflow run hello-world.nf --greeting 'Hello World!'
+2024-12-31 16:16:00	3.3s	shrivelled_saha	OK	8b527a13fa5aeb4b79a9f19e1bed8d8c	e2486d4b-8fc7-43cb-a626-6387f5dedf8a	nextflow run hello-world.nf
+2024-12-31 16:16:38	5.8s	magical_shirley	OK	8b527a13fa5aeb4b79a9f19e1bed8d8c	73c41a56-88a5-4366-81b9-346c1645727c	nextflow run hello-world.nf -ansi-log false
+2024-12-31 16:18:46	3s	festering_jones	OK	837617e3ee9d6f49881e3efdcda36698	21589dc3-4ffe-4888-9659-d1119890caa8	nextflow run hello-world.nf
+2024-12-31 16:59:03	3.5s	gloomy_euler	OK	3a1a2299374a580a70e17e4933a541c7	926eb650-bd0e-4b31-b081-3d9eb0f7bad4	nextflow run hello-world.nf
+2024-12-31 16:59:48	3.7s	jolly_franklin	OK	3a1a2299374a580a70e17e4933a541c7	08fa0dff-fa8e-465d-a7ff-eef4d36cc4f1	nextflow run hello-world.nf
+2024-12-31 17:01:03	3.2s	tiny_allen	OK	0f2094a557d28f946c5c5fafc222d903	45a61378-4aee-49fa-a38e-4bdfa11865b9	nextflow run hello-world.nf
+2024-12-31 18:12:57	8s	special_roentgen	OK	17b9d87c77ab5ac9d671d7b74fa55bda	590053a1-57d0-46a0-87af-6b7872f7f4dd	nextflow run hello-containers.nf
+2024-12-31 18:23:34	5.8s	trusting_curry	OK	17b9d87c77ab5ac9d671d7b74fa55bda	9160ac69-cbf9-4f23-aec0-1361bff39e2a	nextflow run hello-containers.nf
+2025-01-02 16:42:46	-	irreverent_caravaggio	-	03bf8c71b7cc8530a7cfc27e3b981e35	23e496ac-17bc-49d5-86d9-d260670261a6	nextflow run hello-containers.nf
+2025-01-02 16:44:27	-	jovial_heisenberg	-	ed22eb7f25e67d4cad1ecbaa83f5c9fb	c5ec1de4-06bb-4a7d-831d-ee6731f7fb06	nextflow run hello-containers.nf
+2025-01-02 16:44:50	3.4s	furious_torricelli	ERR	60275ace6444021fef0aeb68dd8bfdc1	e5617593-07d3-4b78-a9a2-e1f75337bdc1	nextflow run hello-containers.nf
+2025-01-02 16:48:05	3.3s	prickly_mirzakhani	ERR	4f5c56f282dad66eadfc20abfa09d35e	4534bf14-c784-465f-8247-390a3a7c9cf4	nextflow run hello-containers.nf
+2025-01-02 16:50:00	14.7s	pedantic_planck	OK	dbc45f4a48431da49f7489831a336a50	698eef35-0505-4769-90a9-82f2abeab11e	nextflow run hello-containers.nf
+2025-01-02 17:25:30	7.5s	loving_banach	OK	e7e1082cc2a1ee588786d8d8b10da9b9	f97161e2-df94-44a3-a395-1d40841a75b2	nextflow run hello-genomics.nf
+2025-01-02 18:50:28	13.1s	cranky_hopper	OK	db4a3ecbdfc53a9dd3c32cc7cd8fc94e	f97161e2-df94-44a3-a395-1d40841a75b2	nextflow run hello-genomics.nf -resume
+2025-01-02 19:00:30	15.2s	amazing_kirch	OK	a49b173a304ae4cfbe1fb53d141ef8b3	f97161e2-df94-44a3-a395-1d40841a75b2	nextflow run hello-genomics.nf -resume
+2025-01-02 19:03:19	10.7s	admiring_kay	ERR	a49b173a304ae4cfbe1fb53d141ef8b3	f97161e2-df94-44a3-a395-1d40841a75b2	nextflow run hello-genomics.nf -resume
+2025-01-03 11:09:59	17s	trusting_coulomb	ERR	5e11971ca63084dd0bbbfd2b8f3badfe	5e6e1ea6-67ac-4cd4-ae74-b5655ec9e4c8	nextflow run hello-genomics.nf
+2025-01-03 11:17:34	-	lethal_bohr	-	42c1572979ac288cb4101786f1120afd	b2918cb8-0431-4265-8946-bcc3128e8a6d	nextflow run hello-genomics.nf
+2025-01-03 11:19:31	19.5s	desperate_hodgkin	OK	774f63ebb0c94d72f619ee1ac4ac1892	5c2192f9-7c03-43c9-8816-922b906878d3	nextflow run hello-genomics.nf
+2025-01-03 11:31:18	22.4s	trusting_snyder	OK	d773c4905baeb3ab2bc82f0d5dd741bd	fada75ee-f8e7-422f-ac70-8d0fbcb680a8	nextflow run hello-genomics.nf
+2025-01-03 12:09:20	20.7s	tender_almeida	OK	27e124d7a5e227dca66b2e9c24683fcd	b12a900f-545a-41e3-9e81-b914bc28a84a	nextflow run hello-operators.nf
+2025-01-03 12:12:35	22.4s	desperate_venter	OK	b76e9dc8161c545d23bb6b7de9d7d9ba	5cce99a0-54b3-452e-8379-5fc04f4c7f5b	nextflow run hello-operators.nf
+2025-01-03 12:20:36	-	irreverent_blackwell	-	e864a537f5a75d0a774238a76146b4f1	5cce99a0-54b3-452e-8379-5fc04f4c7f5b	nextflow run hello-operators.nf -resume
+2025-01-03 12:22:32	9.3s	trusting_ride	ERR	58e79b2a12012800921b8196dab5a08b	5cce99a0-54b3-452e-8379-5fc04f4c7f5b	nextflow run hello-operators.nf -resume
+2025-01-03 12:24:42	11s	prickly_kirch	ERR	58e79b2a12012800921b8196dab5a08b	5cce99a0-54b3-452e-8379-5fc04f4c7f5b	nextflow run hello-operators.nf -resume
+2025-01-03 12:25:42	10.1s	lonely_faraday	ERR	f3c0f831e3d49dd9c02f2cbe169311e8	5cce99a0-54b3-452e-8379-5fc04f4c7f5b	nextflow run hello-operators.nf -resume
+2025-01-03 13:41:31	11.4s	disturbed_snyder	OK	1685ddf8a7eba662e139d17c6da1cb43	5cce99a0-54b3-452e-8379-5fc04f4c7f5b	nextflow run hello-operators.nf -resume
+2025-01-03 13:47:18	13.9s	evil_lavoisier	OK	d97298ed0d4274fdc9278590903f0004	5cce99a0-54b3-452e-8379-5fc04f4c7f5b	nextflow run hello-operators.nf -resume

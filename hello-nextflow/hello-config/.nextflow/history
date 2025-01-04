@@ -1,0 +1,12 @@
+2025-01-03 19:55:35	1m 33s	scruffy_mercator	OK	067aeb0c2ca2aa783479bcb031d98eb3	c9483bed-f877-4200-aeff-541850eb4cab	nextflow run main.nf
+2025-01-03 19:59:39	31.8s	golden_torricelli	OK	067aeb0c2ca2aa783479bcb031d98eb3	a477b0c0-2507-4b03-aeea-22f23b4ff38c	nextflow run main.nf -profile conda_on
+2025-01-03 20:00:23	30.1s	sad_cantor	OK	067aeb0c2ca2aa783479bcb031d98eb3	cd2e4288-5cc2-43d9-ad8e-48b00563ebd8	nextflow run main.nf -profile docker_on
+2025-01-03 20:06:39	5.8s	fervent_lumiere	ERR	067aeb0c2ca2aa783479bcb031d98eb3	4b7a6d4f-9ef6-4bdd-9818-fb75b410ddc5	nextflow run main.nf -profile conda_on
+2025-01-03 20:16:31	30.8s	soggy_liskov	OK	067aeb0c2ca2aa783479bcb031d98eb3	43a865e2-363a-4773-9576-d8d0753892e7	nextflow run main.nf -profile docker_on,local_exec
+2025-01-03 20:23:38	31.6s	dreamy_curran	OK	067aeb0c2ca2aa783479bcb031d98eb3	f4510a45-8535-4783-b519-51e2eec0ea8c	nextflow run main.nf -profile my_laptop
+2025-01-03 21:01:56	31.3s	sleepy_woese	OK	067aeb0c2ca2aa783479bcb031d98eb3	477c3f2c-a2bb-4076-a015-a9af7e093a6d	nextflow run main.nf -profile my_laptop
+2025-01-03 21:03:23	31.3s	distraught_lovelace	OK	067aeb0c2ca2aa783479bcb031d98eb3	2c89b880-19f4-45ca-9fc5-f51b4c2082b5	nextflow run main.nf -profile my_laptop
+2025-01-03 21:07:03	30.4s	peaceful_joliot	OK	067aeb0c2ca2aa783479bcb031d98eb3	446d3b2b-ae08-4cae-8fd0-fe0c4c373acd	nextflow run main.nf -profile my_laptop -with-report report-config-1.html
+2025-01-03 21:17:29	39.8s	special_hoover	OK	067aeb0c2ca2aa783479bcb031d98eb3	9d92d0ee-60fc-430a-a823-e8e26c9a8112	nextflow run main.nf -profile my_laptop -with-report report-config-2.html
+2025-01-03 21:26:58	4.1s	sick_aryabhata	OK	9cbd14647cb131c783ef2e65474251cd	9d92d0ee-60fc-430a-a823-e8e26c9a8112	nextflow run main.nf -profile my_laptop -resume
+2025-01-03 21:30:06	33.2s	furious_neumann	OK	9cbd14647cb131c783ef2e65474251cd	d137c0be-7181-4b5f-90cd-db3e44e85cbd	nextflow run main.nf -profile my_laptop -params-file demo-params.json

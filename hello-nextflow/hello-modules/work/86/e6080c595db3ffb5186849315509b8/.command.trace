@@ -1,0 +1,17 @@
+nextflow.trace/v2
+realtime=6256
+%cpu=2673
+cpu_model=AMD EPYC 7B13
+rchar=123352119
+wchar=52134089
+syscr=48623
+syscw=51048
+read_bytes=28155904
+write_bytes=53051392
+%mem=9
+vmem=5108044
+rss=623784
+peak_vmem=5173612
+peak_rss=623784
+vol_ctxt=5
+inv_ctxt=5
