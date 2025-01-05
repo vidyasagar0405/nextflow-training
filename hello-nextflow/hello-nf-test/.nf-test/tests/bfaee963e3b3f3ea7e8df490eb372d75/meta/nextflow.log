@@ -1,0 +1,72 @@
+Jan-05 16:29:19.505 [main] DEBUG nextflow.cli.Launcher - $> nextflow -quiet -log /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test/tests/bfaee963e3b3f3ea7e8df490eb372d75/meta/nextflow.log run /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test-bfaee963e3b3f3ea7e8df490eb372d75.nf -c /workspace/nextflow-training/hello-nextflow/hello-nf-test/nextflow.config -c /workspace/nextflow-training/hello-nextflow/hello-nf-test/tests/nextflow.config -params-file /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test/tests/bfaee963e3b3f3ea7e8df490eb372d75/meta/params.json -ansi-log false -profile docker_on -with-trace /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test/tests/bfaee963e3b3f3ea7e8df490eb372d75/meta/trace.csv -w /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test/tests/bfaee963e3b3f3ea7e8df490eb372d75/work
+Jan-05 16:29:19.701 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.3
+Jan-05 16:29:19.723 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/gitpod/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Jan-05 16:29:19.741 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-05 16:29:19.741 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-05 16:29:19.744 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-05 16:29:19.782 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-05 16:29:19.809 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /workspace/nextflow-training/hello-nextflow/hello-nf-test/nextflow.config
+Jan-05 16:29:19.813 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /workspace/nextflow-training/hello-nextflow/hello-nf-test/nextflow.config
+Jan-05 16:29:19.814 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /workspace/nextflow-training/hello-nextflow/hello-nf-test/tests/nextflow.config
+Jan-05 16:29:19.816 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspace/nextflow-training/hello-nextflow/hello-nf-test/nextflow.config
+Jan-05 16:29:19.816 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspace/nextflow-training/hello-nextflow/hello-nf-test/nextflow.config
+Jan-05 16:29:19.816 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspace/nextflow-training/hello-nextflow/hello-nf-test/tests/nextflow.config
+Jan-05 16:29:19.878 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/gitpod/.nextflow/secrets/store.json
+Jan-05 16:29:19.881 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@30506c0d] - activable => nextflow.secret.LocalSecretsProvider@30506c0d
+Jan-05 16:29:19.904 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker_on`
+Jan-05 16:29:21.193 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker_on`
+Jan-05 16:29:21.284 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker_on`
+Jan-05 16:29:21.304 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [conda_on, my_laptop, univ_hpc, demo, docker_on]
+Jan-05 16:29:21.401 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Jan-05 16:29:21.473 [main] INFO  nextflow.cli.CmdRun - Launching `/workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test-bfaee963e3b3f3ea7e8df490eb372d75.nf` [naughty_angela] DSL2 - revision: 391c0f75a6
+Jan-05 16:29:21.475 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-05 16:29:21.475 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-05 16:29:21.583 [main] DEBUG nextflow.Session - Session UUID: 79b33b35-0688-4d85-a266-570c5a811b01
+Jan-05 16:29:21.584 [main] DEBUG nextflow.Session - Run name: naughty_angela
+Jan-05 16:29:21.585 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-05 16:29:21.595 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-05 16:29:21.602 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-05 16:29:21.689 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.3 build 5933
+  Created: 16-12-2024 15:34 UTC 
+  System: Linux 6.1.91-060191-generic
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 11.0.25+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 4414@vidyasagar0-nextflowtra-h0uhhwv2t10 [127.0.0.1]
+  CPUs: 16 - Mem: 62.8 GB (40.7 GB) - Swap: 375 GB (374.6 GB)
+Jan-05 16:29:21.790 [main] DEBUG nextflow.Session - Work-dir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test/tests/bfaee963e3b3f3ea7e8df490eb372d75/work [xfs]
+Jan-05 16:29:21.791 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspace/nextflow-training/hello-nextflow/hello-nf-test/bin
+Jan-05 16:29:21.804 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-05 16:29:21.877 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-05 16:29:21.970 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-05 16:29:21.993 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jan-05 16:29:22.119 [main] DEBUG nextflow.Session - Session start
+Jan-05 16:29:22.121 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test/tests/bfaee963e3b3f3ea7e8df490eb372d75/meta/trace.csv
+Jan-05 16:29:22.772 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-05 16:29:23.215 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-05 16:29:23.216 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-05 16:29:23.276 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-05 16:29:23.284 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=62.8 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-05 16:29:23.287 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jan-05 16:29:23.586 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: SAMTOOLS_INDEX
+Jan-05 16:29:23.597 [main] WARN  nextflow.Session - There's no process matching config selector: GATK_JOINTGENOTYPING
+Jan-05 16:29:23.597 [main] DEBUG nextflow.Session - Igniting dataflow network (1)
+Jan-05 16:29:23.599 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SAMTOOLS_INDEX
+Jan-05 16:29:23.600 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_fdda720b63ff0686: /workspace/nextflow-training/hello-nextflow/hello-nf-test/modules/local/samtools/index/tests/../main.nf
+  Script_abc8fb4612f1c8fa: /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test-bfaee963e3b3f3ea7e8df490eb372d75.nf
+Jan-05 16:29:23.600 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-05 16:29:23.601 [main] DEBUG nextflow.Session - Session await
+Jan-05 16:29:24.077 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 16:29:24.080 [Task submitter] INFO  nextflow.Session - [ac/7bba4c] Submitted process > SAMTOOLS_INDEX
+Jan-05 16:29:26.456 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SAMTOOLS_INDEX; status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/.nf-test/tests/bfaee963e3b3f3ea7e8df490eb372d75/work/ac/7bba4c53fb5583bc5ea22ae83beae9]
+Jan-05 16:29:26.456 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-05 16:29:26.495 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-05 16:29:26.554 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jan-05 16:29:26.554 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-05 16:29:26.570 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jan-05 16:29:26.579 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=22ms; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=2; peakMemory=2 GB; ]
+Jan-05 16:29:26.579 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Jan-05 16:29:26.585 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-05 16:29:26.595 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jan-05 16:29:26.595 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

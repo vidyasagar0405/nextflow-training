@@ -1,0 +1,19 @@
+{
+    "reads_son [bam]": {
+        "content": [
+            {
+                "0": [
+                    [
+                        "reads_son.bam:md5,af5956d9388ba017944bef276b71d809",
+                        "reads_son.bam.bai:md5,a2ca7b84998218ee77eff14af8eb8ca2"
+                    ]
+                ]
+            }
+        ],
+        "meta": {
+            "nf-test": "0.9.2",
+            "nextflow": "24.10.3"
+        },
+        "timestamp": "2025-01-05T16:29:26.666536"
+    }
+}
