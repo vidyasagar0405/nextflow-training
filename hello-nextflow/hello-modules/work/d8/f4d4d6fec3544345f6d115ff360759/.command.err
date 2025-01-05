@@ -1,0 +1,60 @@
+Unable to find image 'community.wave.seqera.io/library/samtools:1.20--b5dfbd93de237464' locally
+1.20--b5dfbd93de237464: Pulling from library/samtools
+6360b3717211: Pulling fs layer
+2ec3f7ad9b3c: Pulling fs layer
+7716ca300600: Pulling fs layer
+4f4fb700ef54: Pulling fs layer
+8c61d418774c: Pulling fs layer
+03dae77ff45c: Pulling fs layer
+aab7f787139d: Pulling fs layer
+837d55536720: Pulling fs layer
+897362c12ca7: Pulling fs layer
+3893cbe24e91: Pulling fs layer
+d1b61e94977b: Pulling fs layer
+c72ff66fb90f: Pulling fs layer
+0e0388f29b6d: Pulling fs layer
+4f4fb700ef54: Waiting
+837d55536720: Waiting
+3893cbe24e91: Waiting
+897362c12ca7: Waiting
+aab7f787139d: Waiting
+03dae77ff45c: Waiting
+c72ff66fb90f: Waiting
+2ec3f7ad9b3c: Verifying Checksum
+2ec3f7ad9b3c: Download complete
+6360b3717211: Verifying Checksum
+7716ca300600: Verifying Checksum
+7716ca300600: Download complete
+4f4fb700ef54: Download complete
+8c61d418774c: Verifying Checksum
+8c61d418774c: Download complete
+03dae77ff45c: Verifying Checksum
+03dae77ff45c: Download complete
+aab7f787139d: Verifying Checksum
+aab7f787139d: Download complete
+6360b3717211: Pull complete
+2ec3f7ad9b3c: Pull complete
+837d55536720: Verifying Checksum
+837d55536720: Download complete
+7716ca300600: Pull complete
+4f4fb700ef54: Pull complete
+8c61d418774c: Pull complete
+03dae77ff45c: Pull complete
+aab7f787139d: Pull complete
+837d55536720: Pull complete
+897362c12ca7: Download complete
+897362c12ca7: Pull complete
+3893cbe24e91: Verifying Checksum
+3893cbe24e91: Download complete
+3893cbe24e91: Pull complete
+d1b61e94977b: Download complete
+d1b61e94977b: Pull complete
+c72ff66fb90f: Download complete
+c72ff66fb90f: Pull complete
+0e0388f29b6d: Verifying Checksum
+0e0388f29b6d: Download complete
+0e0388f29b6d: Pull complete
+Digest: sha256:bbfc45b4f228975bde86cba95e303dd94ecf2fdacea5bfb2e2f34b0d7b141e41
+Status: Image is up to date for community.wave.seqera.io/library/samtools:1.20--b5dfbd93de237464
+[E::hts_open_format] Failed to open file "reads_father.bam" : No such file or directory
+samtools index: failed to open "reads_father.bam": No such file or directory

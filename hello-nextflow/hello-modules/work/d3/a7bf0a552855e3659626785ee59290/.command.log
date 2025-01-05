@@ -1,0 +1,3 @@
+[E::hts_open_format] Failed to open file "reads_mother.bam" : No such file or directory
+samtools index: failed to open "reads_mother.bam": No such file or directory
+nxf-VUzi500liAUbYatEOX741h2Q

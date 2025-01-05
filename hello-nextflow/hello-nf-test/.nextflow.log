@@ -1,0 +1,90 @@
+Jan-05 13:53:00.289 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf -profile my_laptop,demo
+Jan-05 13:53:00.507 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.3
+Jan-05 13:53:00.594 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/gitpod/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Jan-05 13:53:00.625 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-05 13:53:00.626 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-05 13:53:00.631 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-05 13:53:00.673 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-05 13:53:00.708 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /workspace/nextflow-training/hello-nextflow/hello-nf-test/nextflow.config
+Jan-05 13:53:00.714 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /workspace/nextflow-training/hello-nextflow/hello-nf-test/nextflow.config
+Jan-05 13:53:00.784 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/gitpod/.nextflow/secrets/store.json
+Jan-05 13:53:00.789 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@4390f46e] - activable => nextflow.secret.LocalSecretsProvider@4390f46e
+Jan-05 13:53:00.797 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `my_laptop,demo`
+Jan-05 13:53:02.484 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [conda_on, my_laptop, univ_hpc, demo, docker_on]
+Jan-05 13:53:02.672 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jan-05 13:53:02.763 [main] DEBUG nextflow.cli.CmdRun - Launching `main.nf` [curious_lamarr] DSL2 - revision: 29d9a5e27a
+Jan-05 13:53:02.765 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-05 13:53:02.766 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Jan-05 13:53:03.074 [main] DEBUG nextflow.Session - Session UUID: de991ae2-c12b-4072-89f1-7994061ba8d7
+Jan-05 13:53:03.075 [main] DEBUG nextflow.Session - Run name: curious_lamarr
+Jan-05 13:53:03.076 [main] DEBUG nextflow.Session - Executor pool size: 16
+Jan-05 13:53:03.092 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-05 13:53:03.164 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-05 13:53:03.288 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.3 build 5933
+  Created: 16-12-2024 15:34 UTC 
+  System: Linux 6.1.91-060191-generic
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 11.0.25+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 2517@vidyasagar0-nextflowtra-h0uhhwv2t10 [127.0.0.1]
+  CPUs: 16 - Mem: 62.8 GB (1.5 GB) - Swap: 375 GB (374.9 GB)
+Jan-05 13:53:03.387 [main] DEBUG nextflow.Session - Work-dir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work [xfs]
+Jan-05 13:53:03.388 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /workspace/nextflow-training/hello-nextflow/hello-nf-test/bin
+Jan-05 13:53:03.466 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-05 13:53:03.482 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-05 13:53:03.593 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-05 13:53:03.872 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Jan-05 13:53:04.077 [main] DEBUG nextflow.Session - Session start
+Jan-05 13:53:04.964 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-05 13:53:06.767 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-05 13:53:06.768 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-05 13:53:06.778 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-05 13:53:06.790 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=16; memory=62.8 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Jan-05 13:53:06.794 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jan-05 13:53:07.191 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-05 13:53:07.192 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-05 13:53:07.376 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:GATK_JOINTGENOTYPING` matches process GATK_JOINTGENOTYPING
+Jan-05 13:53:07.387 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Jan-05 13:53:07.387 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-05 13:53:07.469 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: GATK_JOINTGENOTYPING, GATK_HAPLOTYPECALLER, SAMTOOLS_INDEX
+Jan-05 13:53:07.471 [main] DEBUG nextflow.Session - Igniting dataflow network (4)
+Jan-05 13:53:07.485 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > SAMTOOLS_INDEX
+Jan-05 13:53:07.489 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATK_HAPLOTYPECALLER
+Jan-05 13:53:07.491 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > GATK_JOINTGENOTYPING
+Jan-05 13:53:07.493 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_68f54efa5f4660e4: /workspace/nextflow-training/hello-nextflow/hello-nf-test/./modules/local/gatk/jointgenotyping/main.nf
+  Script_7399a6d8fc9a235b: /workspace/nextflow-training/hello-nextflow/hello-nf-test/./modules/local/gatk/haplotypecaller/main.nf
+  Script_aaf2e4cc3d4321bd: /workspace/nextflow-training/hello-nextflow/hello-nf-test/main.nf
+  Script_fdda720b63ff0686: /workspace/nextflow-training/hello-nextflow/hello-nf-test/./modules/local/samtools/index/main.nf
+Jan-05 13:53:07.494 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-05 13:53:07.494 [main] DEBUG nextflow.Session - Session await
+Jan-05 13:53:08.192 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 13:53:08.199 [Task submitter] INFO  nextflow.Session - [a0/d7d9b7] Submitted process > SAMTOOLS_INDEX (2)
+Jan-05 13:53:08.230 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 13:53:08.236 [Task submitter] INFO  nextflow.Session - [a8/073d84] Submitted process > SAMTOOLS_INDEX (1)
+Jan-05 13:53:08.274 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 13:53:08.276 [Task submitter] INFO  nextflow.Session - [09/20b4fa] Submitted process > SAMTOOLS_INDEX (3)
+Jan-05 13:53:11.604 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: SAMTOOLS_INDEX (1); status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/a8/073d845d6934099bdc7564bb553933]
+Jan-05 13:53:11.605 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-05 13:53:11.657 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 13:53:11.659 [Task submitter] INFO  nextflow.Session - [0d/1c2fe8] Submitted process > GATK_HAPLOTYPECALLER (1)
+Jan-05 13:53:11.678 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: SAMTOOLS_INDEX (3); status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/09/20b4fa0b8d8f5a1730f71463d033be]
+Jan-05 13:53:11.710 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 13:53:11.711 [Task submitter] INFO  nextflow.Session - [23/f486e6] Submitted process > GATK_HAPLOTYPECALLER (2)
+Jan-05 13:53:11.760 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: SAMTOOLS_INDEX (2); status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/a0/d7d9b73f7bcedc04a7e34ae8a5cba1]
+Jan-05 13:53:11.791 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 13:53:11.792 [Task submitter] INFO  nextflow.Session - [3a/9d89af] Submitted process > GATK_HAPLOTYPECALLER (3)
+Jan-05 13:53:21.125 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: GATK_HAPLOTYPECALLER (1); status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/0d/1c2fe82929b0d8a5fc23baa30577a6]
+Jan-05 13:53:21.369 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: GATK_HAPLOTYPECALLER (2); status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/23/f486e6a77922648dff2624650f0cc9]
+Jan-05 13:53:21.419 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: GATK_HAPLOTYPECALLER (3); status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/3a/9d89afe317b50d3cbc3ec72a6b7825]
+Jan-05 13:53:21.463 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-05 13:53:21.464 [Task submitter] INFO  nextflow.Session - [c9/470ead] Submitted process > GATK_JOINTGENOTYPING
+Jan-05 13:53:31.358 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: GATK_JOINTGENOTYPING; status: COMPLETED; exit: 0; error: -; workDir: /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/c9/470ead6bd0a8c4cf1cd1ee797f2dbc]
+Jan-05 13:53:31.365 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-05 13:53:31.459 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jan-05 13:53:31.460 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-05 13:53:31.464 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jan-05 13:53:31.471 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 27s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=3; peakCpus=6; peakMemory=6 GB; ]
+Jan-05 13:53:31.601 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-05 13:53:31.618 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jan-05 13:53:31.619 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

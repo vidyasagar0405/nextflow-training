@@ -1,0 +1,84 @@
+Using GATK jar /opt/conda/share/gatk4-4.5.0.0-0/gatk-package-4.5.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /opt/conda/share/gatk4-4.5.0.0-0/gatk-package-4.5.0.0-local.jar GenomicsDBImport -V reads_mother.bam.g.vcf -V reads_son.bam.g.vcf -V reads_father.bam.g.vcf -L intervals.bed --genomicsdb-workspace-path family_trio_gdb
+13:53:24.442 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/conda/share/gatk4-4.5.0.0-0/gatk-package-4.5.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+13:53:24.609 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:53:24.612 INFO  GenomicsDBImport - The Genome Analysis Toolkit (GATK) v4.5.0.0
+13:53:24.612 INFO  GenomicsDBImport - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:53:24.613 INFO  GenomicsDBImport - Executing as root@9d5cf12fbb14 on Linux v6.1.91-060191-generic amd64
+13:53:24.613 INFO  GenomicsDBImport - Java runtime: OpenJDK 64-Bit Server VM v17.0.11-internal+0-adhoc..src
+13:53:24.614 INFO  GenomicsDBImport - Start Date/Time: January 5, 2025 at 1:53:24 PM GMT
+13:53:24.614 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:53:24.614 INFO  GenomicsDBImport - ------------------------------------------------------------
+13:53:24.616 INFO  GenomicsDBImport - HTSJDK Version: 4.1.0
+13:53:24.616 INFO  GenomicsDBImport - Picard Version: 3.1.1
+13:53:24.616 INFO  GenomicsDBImport - Built for Spark Version: 3.5.0
+13:53:24.617 INFO  GenomicsDBImport - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:53:24.617 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:53:24.617 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:53:24.617 INFO  GenomicsDBImport - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:53:24.617 INFO  GenomicsDBImport - Deflater: IntelDeflater
+13:53:24.618 INFO  GenomicsDBImport - Inflater: IntelInflater
+13:53:24.618 INFO  GenomicsDBImport - GCS max retries/reopens: 20
+13:53:24.618 INFO  GenomicsDBImport - Requester pays: disabled
+13:53:24.619 INFO  GenomicsDBImport - Initializing engine
+13:53:24.879 INFO  FeatureManager - Using codec BEDCodec to read file file:///workspace/nextflow-training/hello-nextflow/hello-nf-test/work/c9/470ead6bd0a8c4cf1cd1ee797f2dbc/intervals.bed
+13:53:24.887 INFO  IntervalArgumentCollection - Processing 6369 bp from intervals
+13:53:24.892 INFO  GenomicsDBImport - Done initializing engine
+13:53:25.194 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.5.1-84e800e
+13:53:25.195 INFO  GenomicsDBImport - Vid Map JSON file will be written to /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/c9/470ead6bd0a8c4cf1cd1ee797f2dbc/family_trio_gdb/vidmap.json
+13:53:25.196 INFO  GenomicsDBImport - Callset Map JSON file will be written to /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/c9/470ead6bd0a8c4cf1cd1ee797f2dbc/family_trio_gdb/callset.json
+13:53:25.196 INFO  GenomicsDBImport - Complete VCF Header will be written to /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/c9/470ead6bd0a8c4cf1cd1ee797f2dbc/family_trio_gdb/vcfheader.vcf
+13:53:25.196 INFO  GenomicsDBImport - Importing to workspace - /workspace/nextflow-training/hello-nextflow/hello-nf-test/work/c9/470ead6bd0a8c4cf1cd1ee797f2dbc/family_trio_gdb
+13:53:25.468 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:53:25.682 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:53:25.847 INFO  GenomicsDBImport - Importing batch 1 with 3 samples
+13:53:25.987 INFO  GenomicsDBImport - Done importing batch 1/1
+13:53:25.988 INFO  GenomicsDBImport - Import completed!
+13:53:25.989 INFO  GenomicsDBImport - Shutting down engine
+[January 5, 2025 at 1:53:25 PM GMT] org.broadinstitute.hellbender.tools.genomicsdb.GenomicsDBImport done. Elapsed time: 0.03 minutes.
+Runtime.totalMemory()=82837504
+Tool returned:
+true
+Using GATK jar /opt/conda/share/gatk4-4.5.0.0-0/gatk-package-4.5.0.0-local.jar
+Running:
+    java -Dsamjdk.use_async_io_read_samtools=false -Dsamjdk.use_async_io_write_samtools=true -Dsamjdk.use_async_io_write_tribble=false -Dsamjdk.compression_level=2 -jar /opt/conda/share/gatk4-4.5.0.0-0/gatk-package-4.5.0.0-local.jar GenotypeGVCFs -R ref.fasta -V gendb://family_trio_gdb -L intervals.bed -O family_trio.joint.vcf
+13:53:28.543 INFO  NativeLibraryLoader - Loading libgkl_compression.so from jar:file:/opt/conda/share/gatk4-4.5.0.0-0/gatk-package-4.5.0.0-local.jar!/com/intel/gkl/native/libgkl_compression.so
+13:53:28.726 INFO  GenotypeGVCFs - ------------------------------------------------------------
+13:53:28.730 INFO  GenotypeGVCFs - The Genome Analysis Toolkit (GATK) v4.5.0.0
+13:53:28.730 INFO  GenotypeGVCFs - For support and documentation go to https://software.broadinstitute.org/gatk/
+13:53:28.730 INFO  GenotypeGVCFs - Executing as root@9d5cf12fbb14 on Linux v6.1.91-060191-generic amd64
+13:53:28.730 INFO  GenotypeGVCFs - Java runtime: OpenJDK 64-Bit Server VM v17.0.11-internal+0-adhoc..src
+13:53:28.731 INFO  GenotypeGVCFs - Start Date/Time: January 5, 2025 at 1:53:28 PM GMT
+13:53:28.731 INFO  GenotypeGVCFs - ------------------------------------------------------------
+13:53:28.731 INFO  GenotypeGVCFs - ------------------------------------------------------------
+13:53:28.732 INFO  GenotypeGVCFs - HTSJDK Version: 4.1.0
+13:53:28.732 INFO  GenotypeGVCFs - Picard Version: 3.1.1
+13:53:28.732 INFO  GenotypeGVCFs - Built for Spark Version: 3.5.0
+13:53:28.733 INFO  GenotypeGVCFs - HTSJDK Defaults.COMPRESSION_LEVEL : 2
+13:53:28.733 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_READ_FOR_SAMTOOLS : false
+13:53:28.733 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_SAMTOOLS : true
+13:53:28.733 INFO  GenotypeGVCFs - HTSJDK Defaults.USE_ASYNC_IO_WRITE_FOR_TRIBBLE : false
+13:53:28.734 INFO  GenotypeGVCFs - Deflater: IntelDeflater
+13:53:28.734 INFO  GenotypeGVCFs - Inflater: IntelInflater
+13:53:28.734 INFO  GenotypeGVCFs - GCS max retries/reopens: 20
+13:53:28.734 INFO  GenotypeGVCFs - Requester pays: disabled
+13:53:28.735 INFO  GenotypeGVCFs - Initializing engine
+13:53:29.276 INFO  GenomicsDBLibLoader - GenomicsDB native library version : 1.5.1-84e800e
+13:53:29.359 INFO  NativeGenomicsDB - pid=383 tid=384 No valid combination operation found for INFO field InbreedingCoeff  - the field will NOT be part of INFO fields in the generated VCF records
+13:53:29.359 INFO  NativeGenomicsDB - pid=383 tid=384 No valid combination operation found for INFO field MLEAC  - the field will NOT be part of INFO fields in the generated VCF records
+13:53:29.359 INFO  NativeGenomicsDB - pid=383 tid=384 No valid combination operation found for INFO field MLEAF  - the field will NOT be part of INFO fields in the generated VCF records
+13:53:29.430 INFO  FeatureManager - Using codec BEDCodec to read file file:///workspace/nextflow-training/hello-nextflow/hello-nf-test/work/c9/470ead6bd0a8c4cf1cd1ee797f2dbc/intervals.bed
+13:53:29.447 INFO  IntervalArgumentCollection - Processing 6369 bp from intervals
+13:53:29.453 INFO  GenotypeGVCFs - Done initializing engine
+13:53:29.497 INFO  ProgressMeter - Starting traversal
+13:53:29.498 INFO  ProgressMeter -        Current Locus  Elapsed Minutes    Variants Processed  Variants/Minute
+13:53:29.965 WARN  InbreedingCoeff - InbreedingCoeff will not be calculated at position 20_10037292_10066351:3480 and possibly subsequent; at least 10 samples must have called genotypes
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),0.06638141300000013,Cpu time(s),0.06302974300000003
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),0.03228917699999999,Cpu time(s),0.027532733000000024
+GENOMICSDB_TIMER,GenomicsDB iterator next() timer,Wall-clock time(s),0.017126584999999982,Cpu time(s),0.015531376
+13:53:30.966 INFO  ProgressMeter - 20_10037292_10066351:13953              0.0                  3390         138650.3
+13:53:30.966 INFO  ProgressMeter - Traversal complete. Processed 3390 total variants in 0.0 minutes.
+13:53:30.967 INFO  GenotypeGVCFs - Shutting down engine
+[January 5, 2025 at 1:53:30 PM GMT] org.broadinstitute.hellbender.tools.walkers.GenotypeGVCFs done. Elapsed time: 0.04 minutes.
+Runtime.totalMemory()=135266304

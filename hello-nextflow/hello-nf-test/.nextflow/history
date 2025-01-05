@@ -1,0 +1,1 @@
+2025-01-05 13:53:03	28.6s	curious_lamarr	OK	29d9a5e27a06d1ee25e4bd352f77d0e8	de991ae2-c12b-4072-89f1-7994061ba8d7	nextflow run main.nf -profile my_laptop,demo

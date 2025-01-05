@@ -1,0 +1,1 @@
+2025-01-05 12:06:42	1s	sleepy_bell	OK	1f3f2b6470edb892b7c72ce1e351e3a6	a852f530-13de-43cf-959f-8879fea7a7d0	nextflow run main.nf -profile my_laptop,demo -resume
