@@ -17,9 +17,9 @@ filename2=$(basename "$SAMPLE2")
 filename3=$(basename "$SAMPLE3")
 
 # Define output VCF file paths for SAMtools and BCFtools
-SAM_BCF_OUT1="./my-pipeline-test/sam-bcf-tools/$filename1.vcf"
-SAM_BCF_OUT2="./my-pipeline-test/sam-bcf-tools/$filename2.vcf"
-SAM_BCF_OUT3="./my-pipeline-test/sam-bcf-tools/$filename3.vcf"
+MPILEUP_OUT1="./my-pipeline-test/sam-bcf-tools/$filename1.vcf"
+MPILEUP_OUT2="./my-pipeline-test/sam-bcf-tools/$filename2.vcf"
+MPILEUP_OUT3="./my-pipeline-test/sam-bcf-tools/$filename3.vcf"
 
 # Define output VCF file paths for GATK
 GATK_OUT1="./my-pipeline-test/gatk/$filename1.vcf"
@@ -33,7 +33,7 @@ NC='\033[0m' # No Color
 
 echo ""
 echo "###########################################"
-echo "#            SAMTOOLS, BCFTOOLS           #"
+echo "#                 MPILEUP                 #"
 echo "###########################################"
 echo ""
 
@@ -46,29 +46,29 @@ fi
 
 # Process SAMPLE1 with SAMtools and BCFtools
 samtools index $SAMPLE1 && 
-bcftools mpileup -f $REF $SAMPLE1 | bcftools call -mv -Oz -o $SAM_BCF_OUT1
+bcftools mpileup -f $REF $SAMPLE1 | bcftools call -mv -o $MPILEUP_OUT1
 if [ $? -eq 0 ]; then
-    echo -e "SAMPLE1 ${GREEN}SUCCESS!!!${NC}"
+    echo -e "${GREEN}SAMPLE1 SUCCESS!!!${NC}"
 else
-    echo -e "SAMPLE1 ${RED}FAILED!!!${NC}" >&2
+    echo -e "${RED}SAMPLE1 FAILED!!!${NC}" >&2
 fi
 
 # Process SAMPLE2 with SAMtools and BCFtools
 samtools index $SAMPLE2 && 
-bcftools mpileup -f $REF $SAMPLE2 | bcftools call -mv -Oz -o $SAM_BCF_OUT2
+bcftools mpileup -f $REF $SAMPLE2 | bcftools call -mv -o $MPILEUP_OUT2
 if [ $? -eq 0 ]; then
-    echo -e "SAMPLE2 ${GREEN}SUCCESS!!!${NC}"
+    echo -e "${GREEN}SAMPLE2 SUCCESS!!!${NC}"
 else
-    echo -e "SAMPLE2 ${RED}FAILED!!!${NC}" >&2
+    echo -e "${RED}SAMPLE2 FAILED!!!${NC}" >&2
 fi
 
 # Process SAMPLE3 with SAMtools and BCFtools
 samtools index $SAMPLE3 && 
-bcftools mpileup -f $REF $SAMPLE3 | bcftools call -mv -Oz -o $SAM_BCF_OUT3
+bcftools mpileup -f $REF $SAMPLE3 | bcftools call -mv -o $MPILEUP_OUT3
 if [ $? -eq 0 ]; then
-    echo -e "SAMPLE3 ${GREEN}SUCCESS!!!${NC}"
+    echo -e "${GREEN}SAMPLE3 SUCCESS!!!${NC}"
 else
-    echo -e "SAMPLE3 ${RED}FAILED!!!${NC}" >&2
+    echo -e "${RED}SAMPLE3 FAILED!!!${NC}" >&2
 fi
 
 echo ""
@@ -144,11 +144,11 @@ fi
 # Count and display the number of non-header lines (variants) in each VCF file
 echo ""
 echo "------------------------------------------"
-echo "             SAMTOOLS, BCFTOOLS           "
+echo "                  MPILEUP                 "
 echo ""
-echo "$filename1 - $(grep -v "#" $SAM_BCF_OUT1 | wc -l)"
-echo "$filename2 - $(grep -v "#" $SAM_BCF_OUT2 | wc -l)"
-echo "$filename3 - $(grep -v "#" $SAM_BCF_OUT3 | wc -l)"
+echo "$filename1 - $(grep -v "#" $MPILEUP_OUT1 | wc -l)"
+echo "$filename2 - $(grep -v "#" $MPILEUP_OUT2 | wc -l)"
+echo "$filename3 - $(grep -v "#" $MPILEUP_OUT3 | wc -l)"
 echo "------------------------------------------"
 echo ""
 
@@ -161,24 +161,35 @@ echo "$filename3 - $(grep -v "#" $GATK_OUT3 | wc -l)"
 echo "-------------------------------------------"
 echo ""
 
-# Extract non-header lines (variant data) to TSV files
-grep -v "#" $SAM_BCF_OUT1 > $SAM_BCF_OUT1.tsv
-grep -v "#" $SAM_BCF_OUT2 > $SAM_BCF_OUT2.tsv
-grep -v "#" $SAM_BCF_OUT3 > $SAM_BCF_OUT3.tsv
-
-grep -v "#" $GATK_OUT1 > $GATK_OUT1.tsv
-grep -v "#" $GATK_OUT2 > $GATK_OUT2.tsv
-grep -v "#" $GATK_OUT3 > $GATK_OUT3.tsv
-
-echo "'#' removed files generated"
+# Extract non-header lines (variant data) to.csv files
+# grep -v "#" $SAM_BCF_OUT1 > $SAM_BCF_OUT1.csv
+# grep -v "#" $SAM_BCF_OUT2 > $SAM_BCF_OUT2.csv
+# grep -v "#" $SAM_BCF_OUT3 > $SAM_BCF_OUT3.csv
+#
+# grep -v "#" $GATK_OUT1 > $GATK_OUT1.csv
+# grep -v "#" $GATK_OUT2 > $GATK_OUT2.csv
+# grep -v "#" $GATK_OUT3 > $GATK_OUT3.csv
+#
+# echo "'#' removed files generated"
 
 # Extract specific columns (position and genotype) for each sample
-cut -f2,6 $SAM_BCF_OUT1 | grep -v "#" > "$SAM_BCF_OUT1"_cut.tsv
-cut -f2,6 $SAM_BCF_OUT2 | grep -v "#" > "$SAM_BCF_OUT2"_cut.tsv
-cut -f2,6 $SAM_BCF_OUT3 | grep -v "#" > "$SAM_BCF_OUT3"_cut.tsv
 
-cut -f2,6 $GATK_OUT1    | grep -v "#" > "$GATK_OUT1"_cut.tsv
-cut -f2,6 $GATK_OUT2    | grep -v "#" > "$GATK_OUT2"_cut.tsv
-cut -f2,6 $GATK_OUT3    | grep -v "#" > "$GATK_OUT3"_cut.tsv
+grep -v "#" "$MPILEUP_OUT1" | cut -f2,6 | sort -k1,1 | awk -v OFS="," '{$1=$1; print}'> "${MPILEUP_OUT1}.cut2.sorted.csv"
+grep -v "#" "$MPILEUP_OUT2" | cut -f2,6 | sort -k1,1 | awk -v OFS="," '{$1=$1; print}'> "${MPILEUP_OUT2}.cut2.sorted.csv"
+grep -v "#" "$MPILEUP_OUT3" | cut -f2,6 | sort -k1,1 | awk -v OFS="," '{$1=$1; print}'> "${MPILEUP_OUT3}.cut2.sorted.csv"
+                                                     
+grep -v "#" "$GATK_OUT1"    | cut -f2,6 | sort -k1,1 | awk -v OFS="," '{$1=$1; print}'> "${GATK_OUT1}.cut2.sorted.csv"
+grep -v "#" "$GATK_OUT2"    | cut -f2,6 | sort -k1,1 | awk -v OFS="," '{$1=$1; print}'> "${GATK_OUT2}.cut2.sorted.csv"
+grep -v "#" "$GATK_OUT3"    | cut -f2,6 | sort -k1,1 | awk -v OFS="," '{$1=$1; print}'> "${GATK_OUT3}.cut2.sorted.csv"
 
-echo "cut files generated"
+echo "cut 2 fields files generated"
+
+echo -e "MPILEUP-POS,MPILEUP-QUAL,GATK-POS,GATK-QUAL" > ./my-pipeline-test/"$filename1".csv
+echo -e "MPILEUP-POS,MPILEUP-QUAL,GATK-POS,GATK-QUAL" > ./my-pipeline-test/"$filename2".csv
+echo -e "MPILEUP-POS,MPILEUP-QUAL,GATK-POS,GATK-QUAL" > ./my-pipeline-test/"$filename3".csv
+
+paste -d , "${MPILEUP_OUT1}.cut2.sorted.csv" "${GATK_OUT1}.cut2.sorted.csv" >> ./my-pipeline-test/"$filename1".csv
+paste -d , "${MPILEUP_OUT2}.cut2.sorted.csv" "${GATK_OUT2}.cut2.sorted.csv" >> ./my-pipeline-test/"$filename2".csv
+paste -d , "${MPILEUP_OUT3}.cut2.sorted.csv" "${GATK_OUT3}.cut2.sorted.csv" >> ./my-pipeline-test/"$filename3".csv
+
+echo "Compariison files generated"
