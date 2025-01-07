@@ -1,0 +1,187 @@
+Jan-07 12:40:22.149 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/demo -profile docker,test --outdir results
+Jan-07 12:40:22.248 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 24.10.3
+Jan-07 12:40:22.293 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/codespace/.nextflow/plugins; core-plugins: nf-amazon@2.9.2,nf-azure@1.10.2,nf-cloudcache@0.4.2,nf-codecommit@0.2.2,nf-console@1.1.4,nf-google@1.15.3,nf-tower@1.9.3,nf-wave@1.7.4
+Jan-07 12:40:22.325 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Jan-07 12:40:22.327 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Jan-07 12:40:22.333 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Jan-07 12:40:22.351 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Jan-07 12:40:22.367 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/codespace/.nextflow/scm
+Jan-07 12:40:23.573 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/codespace/.nextflow/assets/nf-core/demo/.git/config; branch: null; remote: origin; url: https://github.com/nf-core/demo.git
+Jan-07 12:40:23.606 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Jan-07 12:40:23.617 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/codespace/.nextflow/assets/nf-core/demo/.git/config; branch: null; remote: origin; url: https://github.com/nf-core/demo.git
+Jan-07 12:40:24.583 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/codespace/.nextflow/assets/nf-core/demo/nextflow.config
+Jan-07 12:40:24.586 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/codespace/.nextflow/assets/nf-core/demo/nextflow.config
+Jan-07 12:40:24.598 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/codespace/.nextflow/secrets/store.json
+Jan-07 12:40:24.605 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@67fb5025] - activable => nextflow.secret.LocalSecretsProvider@67fb5025
+Jan-07 12:40:24.628 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker,test`
+Jan-07 12:40:26.717 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, alice, mjolnir_globe, uppmax, giga, incliva, ilifu, uge, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, ccga_med, tes, scw, unc_longleaf, tigem, tubingen_apg, google, apollo, ipop_up, vsc_calcua, pdc_kth, googlels, ceci_nic5, stjude, daisybio, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, ucl_myriad, utd_ganymede, charliecloud, icr_davros, ceres, arm, munin, rosalind, hasta, cfc, uzh, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, genotoul, nci_gadi, abims, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, mpcdf, leicester, vsc_ugent, create, sage, cambridge, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, computerome, ucd_sonic, seg_globe, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, hki, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, unity, nygc, fgcz, conda, crg, singularity, mpcdf_viper, pe2, self_hosted_runner, tufts, uw_hyak_pedslabs, debug, genouest, cbe, unsw_katana, gitpod, phoenix, seawulf, uod_hpc, fub_curta, uct_hpc, aws_tower, binac]
+Jan-07 12:40:26.780 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Jan-07 12:40:26.781 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/demo` [disturbed_majorana] DSL2 - revision: 04060b4644 [master]
+Jan-07 12:40:26.784 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.1.1]
+Jan-07 12:40:26.785 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Jan-07 12:40:26.785 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.1.1]
+Jan-07 12:40:26.786 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.1.1
+Jan-07 12:40:26.790 [main] INFO  nextflow.plugin.PluginUpdater - Downloading plugin nf-schema@2.1.1
+Jan-07 12:40:28.995 [main] INFO  org.pf4j.util.FileUtils - Expanded plugin zip 'nf-schema-2.1.1.zip' in 'nf-schema-2.1.1'
+Jan-07 12:40:28.998 [main] DEBUG nextflow.plugin.PluginUpdater - Failed atomic move for plugin /tmp/pf4j-update-downloader3602288863266910514/nf-schema-2.1.1 -> /home/codespace/.nextflow/plugins/nf-schema-2.1.1 - Reason: /tmp/pf4j-update-downloader3602288863266910514/nf-schema-2.1.1 -> /home/codespace/.nextflow/plugins/nf-schema-2.1.1: Invalid cross-device link - Fallback on safe move
+Jan-07 12:40:29.026 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.1.1' resolved
+Jan-07 12:40:29.027 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.1.1'
+Jan-07 12:40:29.032 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.1.1
+Jan-07 12:40:29.098 [main] DEBUG nextflow.Session - Session UUID: 1a00915b-2a4a-4a08-b653-9a973df8cbd1
+Jan-07 12:40:29.098 [main] DEBUG nextflow.Session - Run name: disturbed_majorana
+Jan-07 12:40:29.099 [main] DEBUG nextflow.Session - Executor pool size: 4
+Jan-07 12:40:29.107 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Jan-07 12:40:29.113 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-07 12:40:29.146 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 24.10.3 build 5933
+  Created: 16-12-2024 15:34 UTC 
+  System: Linux 6.5.0-1025-azure
+  Runtime: Groovy 4.0.23 on OpenJDK 64-Bit Server VM 21.0.5+11-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 3503@codespaces-f7ffda [127.0.0.1]
+  CPUs: 4 - Mem: 15.6 GB (207.6 MB) - Swap: 0 (0)
+Jan-07 12:40:29.171 [main] DEBUG nextflow.Session - Work-dir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work [ext2/ext3]
+Jan-07 12:40:29.171 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /home/codespace/.nextflow/assets/nf-core/demo/bin
+Jan-07 12:40:29.183 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Jan-07 12:40:29.193 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Jan-07 12:40:29.257 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Jan-07 12:40:29.269 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Jan-07 12:40:29.354 [main] DEBUG nextflow.Session - Session start
+Jan-07 12:40:29.357 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/results/pipeline_info/execution_trace_2025-01-07_12-40-26.txt
+Jan-07 12:40:29.511 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Jan-07 12:40:30.057 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Jan-07 12:40:30.527 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Jan-07 12:40:30.529 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Jan-07 12:40:30.531 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Jan-07 12:40:30.532 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Jan-07 12:40:31.007 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Jan-07 12:40:31.008 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Jan-07 12:40:31.011 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Jan-07 12:40:31.012 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Jan-07 12:40:31.748 [main] INFO  nextflow.Nextflow - 
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/demo 1.0.1[0m
+-[2m----------------------------------------------------[0m-
+[1mInput/output options[0m
+  [0;34minput                     : [0;32mhttps://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/samplesheet/samplesheet_test_illumina_amplicon.csv[0m
+  [0;34moutdir                    : [0;32mresults[0m
+
+[1mInstitutional config options[0m
+  [0;34mconfig_profile_name       : [0;32mTest profile[0m
+  [0;34mconfig_profile_description: [0;32mMinimal test dataset to check pipeline function[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrevision                  : [0;32mmaster[0m
+  [0;34mrunName                   : [0;32mdisturbed_majorana[0m
+  [0;34mcontainerEngine           : [0;32mdocker[0m
+  [0;34mlaunchDir                 : [0;32m/workspaces/nextflow-training/hello-nextflow/nf-core-demo[0m
+  [0;34mworkDir                   : [0;32m/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work[0m
+  [0;34mprojectDir                : [0;32m/home/codespace/.nextflow/assets/nf-core/demo[0m
+  [0;34muserName                  : [0;32mcodespace[0m
+  [0;34mprofile                   : [0;32mdocker,test[0m
+  [0;34mconfigFiles               : [0;32m[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-* The pipeline
+  https://doi.org/10.5281/zenodo.12192442
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/demo/blob/master/CITATIONS.md
+
+Jan-07 12:40:31.751 [main] DEBUG nextflow.validation.SchemaValidator - Starting parameters validation
+Jan-07 12:40:32.462 [main] DEBUG nextflow.validation.SchemaEvaluator - Started validating /nf-core/test-datasets/viralrecon/samplesheet/samplesheet_test_illumina_amplicon.csv
+Jan-07 12:40:38.369 [main] DEBUG nextflow.validation.SchemaEvaluator - Validation of file 'https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/samplesheet/samplesheet_test_illumina_amplicon.csv' passed!
+Jan-07 12:40:38.987 [main] DEBUG n.v.FormatDirectoryPathEvaluator - Cloud blob storage paths are not supported by 'FormatDirectoryPathEvaluator': 's3://ngi-igenomes/igenomes/'
+Jan-07 12:40:38.988 [main] DEBUG nextflow.validation.SchemaValidator - Finishing parameters validation
+Jan-07 12:40:43.678 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_DEMO:DEMO:FASTQC
+Jan-07 12:40:43.681 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:FASTQC` matches process NFCORE_DEMO:DEMO:FASTQC
+Jan-07 12:40:43.692 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-07 12:40:43.692 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-07 12:40:43.698 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Jan-07 12:40:43.705 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=15.6 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Jan-07 12:40:43.709 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Jan-07 12:40:43.784 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_DEMO:DEMO:SEQTK_TRIM
+Jan-07 12:40:43.786 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:SEQTK_TRIM` matches process NFCORE_DEMO:DEMO:SEQTK_TRIM
+Jan-07 12:40:43.790 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-07 12:40:43.790 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-07 12:40:43.922 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_DEMO:DEMO:MULTIQC
+Jan-07 12:40:43.923 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:MULTIQC` matches process NFCORE_DEMO:DEMO:MULTIQC
+Jan-07 12:40:43.926 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Jan-07 12:40:43.926 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Jan-07 12:40:43.941 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Jan-07 12:40:43.943 [main] DEBUG nextflow.Session - Igniting dataflow network (13)
+Jan-07 12:40:43.945 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DEMO:DEMO:FASTQC
+Jan-07 12:40:43.945 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DEMO:DEMO:SEQTK_TRIM
+Jan-07 12:40:43.958 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_DEMO:DEMO:MULTIQC
+Jan-07 12:40:43.959 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_7e295c2e0487cfcb: /home/codespace/.nextflow/assets/nf-core/demo/./workflows/../modules/nf-core/seqtk/trim/main.nf
+  Script_f63f33986022cdb6: /home/codespace/.nextflow/assets/nf-core/demo/./subworkflows/local/utils_nfcore_demo_pipeline/main.nf
+  Script_0ce72e734ad77725: /home/codespace/.nextflow/assets/nf-core/demo/./workflows/../subworkflows/local/utils_nfcore_demo_pipeline/../../nf-core/utils_nextflow_pipeline/main.nf
+  Script_4955288afd8ca61e: /home/codespace/.nextflow/assets/nf-core/demo/./workflows/../modules/nf-core/multiqc/main.nf
+  Script_f289bdfe26d7f1cf: /home/codespace/.nextflow/assets/nf-core/demo/./workflows/../modules/nf-core/fastqc/main.nf
+  Script_215a636da7ab24a2: /home/codespace/.nextflow/assets/nf-core/demo/./subworkflows/local/utils_nfcore_demo_pipeline/../../nf-core/utils_nfschema_plugin/main.nf
+  Script_6fbcf8477f9d7d4c: /home/codespace/.nextflow/assets/nf-core/demo/./subworkflows/local/utils_nfcore_demo_pipeline/../../nf-core/utils_nfcore_pipeline/main.nf
+  Script_6c16a50aa4d6fcd7: /home/codespace/.nextflow/assets/nf-core/demo/./workflows/demo.nf
+  Script_64f2fe64a8194249: /home/codespace/.nextflow/assets/nf-core/demo/main.nf
+Jan-07 12:40:43.959 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Jan-07 12:40:43.959 [main] DEBUG nextflow.Session - Session await
+Jan-07 12:40:44.132 [Actor Thread 4] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.002 s; external sort time: 0.015 s; total time: 0.017 s
+Jan-07 12:40:44.132 [Actor Thread 2] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.016 s; total time: 0.017 s
+Jan-07 12:40:44.137 [Actor Thread 2] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/collect-file/826ad0a06ce14821363b0530fd10b61a
+Jan-07 12:40:44.137 [Actor Thread 4] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/collect-file/80ccb7b142c97de52eddbf4c0dead5bc
+Jan-07 12:40:44.145 [Actor Thread 4] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-3184664190102328948
+Jan-07 12:40:44.145 [Actor Thread 2] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-13324588445814216986
+Jan-07 12:40:45.142 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/amplicon/sample1_R1.fastq.gz to work dir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/stage-1a00915b-2a4a-4a08-b653-9a973df8cbd1/64/c9cad57e39a10f59dce759a9b13fef/sample1_R1.fastq.gz
+Jan-07 12:40:45.144 [FileTransfer-2] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/amplicon/sample2_R1.fastq.gz to work dir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/stage-1a00915b-2a4a-4a08-b653-9a973df8cbd1/9a/e2ade24eb8ceedc738d631c87f64c6/sample2_R1.fastq.gz
+Jan-07 12:40:45.830 [FileTransfer-3] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/amplicon/sample1_R2.fastq.gz to work dir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/stage-1a00915b-2a4a-4a08-b653-9a973df8cbd1/8a/ded7081dc88ff9683fe7b52b96b1d0/sample1_R2.fastq.gz
+Jan-07 12:40:45.893 [FileTransfer-4] DEBUG nextflow.file.FilePorter - Copying foreign file https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/illumina/amplicon/sample2_R2.fastq.gz to work dir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/stage-1a00915b-2a4a-4a08-b653-9a973df8cbd1/15/bad2985a35077bad8a74df508a3628/sample2_R2.fastq.gz
+Jan-07 12:40:45.999 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-07 12:40:46.002 [Task submitter] INFO  nextflow.Session - [2c/540539] Submitted process > NFCORE_DEMO:DEMO:FASTQC (SAMPLE3_SE)
+Jan-07 12:41:12.381 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 4; name: NFCORE_DEMO:DEMO:FASTQC (SAMPLE3_SE); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2c/540539aac8b72d2a9597a08847524e]
+Jan-07 12:41:12.382 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-07 12:41:12.390 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-07 12:41:12.395 [Task submitter] INFO  nextflow.Session - [47/d20c9e] Submitted process > NFCORE_DEMO:DEMO:SEQTK_TRIM (SAMPLE3_SE)
+Jan-07 12:41:12.467 [TaskFinalizer-1] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Jan-07 12:41:20.904 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 6; name: NFCORE_DEMO:DEMO:SEQTK_TRIM (SAMPLE3_SE); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/47/d20c9ef907cbdfc00bce6084fbb00a]
+Jan-07 12:41:20.911 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-07 12:41:20.915 [Actor Thread 5] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 3; slices: 1; internal sort time: 0.001 s; external sort time: 0.001 s; total time: 0.002 s
+Jan-07 12:41:20.918 [Actor Thread 5] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/collect-file/a73c1e13fd3c6d2c4e9838f3b5145490
+Jan-07 12:41:20.923 [Actor Thread 5] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-11189158456322366427
+Jan-07 12:41:20.924 [Task submitter] INFO  nextflow.Session - [0f/805280] Submitted process > NFCORE_DEMO:DEMO:FASTQC (SAMPLE1_PE)
+Jan-07 12:41:24.759 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: NFCORE_DEMO:DEMO:FASTQC (SAMPLE1_PE); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/0f/805280e50c28fc4184b470b7ec84d3]
+Jan-07 12:41:24.766 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-07 12:41:24.766 [Task submitter] INFO  nextflow.Session - [0a/1595e2] Submitted process > NFCORE_DEMO:DEMO:SEQTK_TRIM (SAMPLE1_PE)
+Jan-07 12:41:28.377 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: NFCORE_DEMO:DEMO:SEQTK_TRIM (SAMPLE1_PE); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/0a/1595e20dacfaf21b03989027e02040]
+Jan-07 12:41:28.384 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-07 12:41:28.384 [Task submitter] INFO  nextflow.Session - [6b/73e7a0] Submitted process > NFCORE_DEMO:DEMO:SEQTK_TRIM (SAMPLE2_PE)
+Jan-07 12:41:31.238 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 5; name: NFCORE_DEMO:DEMO:SEQTK_TRIM (SAMPLE2_PE); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/6b/73e7a0e079f7a926ea11776735dbbc]
+Jan-07 12:41:31.247 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-07 12:41:31.248 [Task submitter] INFO  nextflow.Session - [69/d0bf93] Submitted process > NFCORE_DEMO:DEMO:FASTQC (SAMPLE2_PE)
+Jan-07 12:41:35.084 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 3; name: NFCORE_DEMO:DEMO:FASTQC (SAMPLE2_PE); status: COMPLETED; exit: 0; error: -; workDir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/69/d0bf93d63e17daba62853550140b70]
+Jan-07 12:41:35.109 [Actor Thread 7] DEBUG nextflow.util.HashBuilder - Hash asset file sha-256: /home/codespace/.nextflow/assets/nf-core/demo/assets/multiqc_config.yml
+Jan-07 12:41:35.125 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Jan-07 12:41:35.125 [Task submitter] INFO  nextflow.Session - [2a/3120aa] Submitted process > NFCORE_DEMO:DEMO:MULTIQC
+Jan-07 12:42:29.983 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 7; name: NFCORE_DEMO:DEMO:MULTIQC; status: COMPLETED; exit: 0; error: -; workDir: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7]
+Jan-07 12:42:30.002 [main] DEBUG nextflow.Session - Session await > all processes finished
+Jan-07 12:42:30.083 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Jan-07 12:42:30.084 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Jan-07 12:42:30.086 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Jan-07 12:42:30.087 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Jan-07 12:42:30.094 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/demo][0;32m Pipeline completed successfully[0m-
+Jan-07 12:42:30.102 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=7; failedCount=0; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=1m 12s; failedDuration=0ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=6; peakMemory=27 GB; ]
+Jan-07 12:42:30.103 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Jan-07 12:42:30.104 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Jan-07 12:42:30.600 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Jan-07 12:42:30.808 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Jan-07 12:42:30.825 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.1.1'
+Jan-07 12:42:30.826 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Jan-07 12:42:30.828 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Jan-07 12:42:30.829 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

@@ -1,0 +1,19 @@
+Unable to find image 'quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0' locally
+0.12.1--hdfd78af_0: Pulling from biocontainers/fastqc
+c1a16a04cedd: Pulling fs layer
+4ca545ee6d5d: Pulling fs layer
+a8697f388c82: Pulling fs layer
+4ca545ee6d5d: Verifying Checksum
+4ca545ee6d5d: Download complete
+c1a16a04cedd: Verifying Checksum
+c1a16a04cedd: Download complete
+c1a16a04cedd: Pull complete
+a8697f388c82: Verifying Checksum
+a8697f388c82: Download complete
+4ca545ee6d5d: Pull complete
+a8697f388c82: Pull complete
+Digest: sha256:e194048df39c3145d9b4e0a14f4da20b59d59250465b6f2a9cb698445fd45900
+Status: Downloaded newer image for quay.io/biocontainers/fastqc:0.12.1--hdfd78af_0
+application/gzip
+application/gzip
+Fontconfig error: No writable cache directories

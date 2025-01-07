@@ -1,0 +1,10 @@
+Unable to find image 'quay.io/biocontainers/seqtk:1.4--he4a0461_1' locally
+1.4--he4a0461_1: Pulling from biocontainers/seqtk
+c1a16a04cedd: Already exists
+4ca545ee6d5d: Already exists
+29cd6c52d25d: Pulling fs layer
+29cd6c52d25d: Verifying Checksum
+29cd6c52d25d: Download complete
+29cd6c52d25d: Pull complete
+Digest: sha256:24a4a7ebb63af178822c166befb4fcafc77d1b6754fe52fb085f0835cc274496
+Status: Downloaded newer image for quay.io/biocontainers/seqtk:1.4--he4a0461_1

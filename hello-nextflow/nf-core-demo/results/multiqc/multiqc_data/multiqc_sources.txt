@@ -1,0 +1,7 @@
+Module	Section	Sample Name	Source
+FastQC	all_sections	SAMPLE2_PE_1	/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7/8/SAMPLE2_PE_1_fastqc.zip
+FastQC	all_sections	SAMPLE3_SE_1	/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7/4/SAMPLE3_SE_1_fastqc.zip
+FastQC	all_sections	SAMPLE3_SE_2	/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7/5/SAMPLE3_SE_2_fastqc.zip
+FastQC	all_sections	SAMPLE2_PE_2	/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7/9/SAMPLE2_PE_2_fastqc.zip
+FastQC	all_sections	SAMPLE1_PE_1	/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7/6/SAMPLE1_PE_1_fastqc.zip
+FastQC	all_sections	SAMPLE1_PE_2	/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7/7/SAMPLE1_PE_2_fastqc.zip

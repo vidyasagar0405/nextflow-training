@@ -1,0 +1,39 @@
+Unable to find image 'quay.io/biocontainers/multiqc:1.25.1--pyhdfd78af_0' locally
+1.25.1--pyhdfd78af_0: Pulling from biocontainers/multiqc
+36b7914fc8ba: Pulling fs layer
+2cc3d3b08aaa: Pulling fs layer
+bd9ddc54bea9: Pulling fs layer
+398aad65abc8: Pulling fs layer
+398aad65abc8: Waiting
+bd9ddc54bea9: Verifying Checksum
+bd9ddc54bea9: Download complete
+2cc3d3b08aaa: Verifying Checksum
+2cc3d3b08aaa: Download complete
+36b7914fc8ba: Verifying Checksum
+36b7914fc8ba: Download complete
+36b7914fc8ba: Pull complete
+398aad65abc8: Verifying Checksum
+398aad65abc8: Download complete
+2cc3d3b08aaa: Pull complete
+bd9ddc54bea9: Pull complete
+398aad65abc8: Pull complete
+Digest: sha256:64fa8caa046020780a7df765cdd27b459f20665578e6f1f240a12d415527adaa
+Status: Downloaded newer image for quay.io/biocontainers/multiqc:1.25.1--pyhdfd78af_0
+
+/// MultiQC 🔍 v1.25.1
+
+            config | Loading config settings from: multiqc_config.yml
+     version_check | MultiQC Version v1.26 now available!
+       file_search | Search path: /workspaces/nextflow-training/hello-nextflow/nf-core-demo/work/2a/3120aa06e9bca9317d54db0e511ee7
+
+    custom_content | HTML plot type found with more than one dataset in nf-core-demo-summary
+    custom_content | nf-core-demo-summary: Found 1 sample (html)
+    custom_content | HTML plot type found with more than one dataset in nf-core-demo-methods-description
+    custom_content | nf-core-demo-methods-description: Found 1 sample (html)
+            fastqc | Found 6 reports
+     write_results | Rendering plots. Export plots to formats png, svg, pdf is requested, so it might take a while. To disable plot export, set `export_plots: false` in config, or remove the `--export-plots` command line flag
+
+     write_results | Data        : multiqc_data
+     write_results | Report      : multiqc_report.html
+     write_results | Plots       : multiqc_plots
+           multiqc | MultiQC complete

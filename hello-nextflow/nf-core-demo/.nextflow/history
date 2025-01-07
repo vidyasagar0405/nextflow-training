@@ -1,0 +1,1 @@
+2025-01-07 12:40:29	2m 2s	disturbed_majorana	OK	04060b4644d68649180db796e89a3db2a466a8d8	1a00915b-2a4a-4a08-b653-9a973df8cbd1	nextflow run nf-core/demo -profile docker,test --outdir results

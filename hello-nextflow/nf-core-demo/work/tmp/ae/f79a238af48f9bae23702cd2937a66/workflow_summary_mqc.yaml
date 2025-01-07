@@ -1,0 +1,28 @@
+id: 'nf-core-demo-summary'
+description: ' - this information is collected when the pipeline is started.'
+section_name: 'nf-core/demo Workflow Summary'
+section_href: 'https://github.com/nf-core/demo'
+plot_type: 'html'
+data: |
+    <p style="font-size:110%"><b>Input/output options</b></p>
+    <dl class="dl-horizontal">
+        <dt>input</dt><dd><samp>https://raw.githubusercontent.com/nf-core/test-datasets/viralrecon/samplesheet/samplesheet_test_illumina_amplicon.csv</samp></dd>
+        <dt>outdir</dt><dd><samp>results</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Institutional config options</b></p>
+    <dl class="dl-horizontal">
+        <dt>config_profile_description</dt><dd><samp>Minimal test dataset to check pipeline function</samp></dd>
+        <dt>config_profile_name</dt><dd><samp>Test profile</samp></dd>
+    </dl>
+    <p style="font-size:110%"><b>Core Nextflow options</b></p>
+    <dl class="dl-horizontal">
+        <dt>configFiles</dt><dd><samp><span style="color:#999999;">N/A</a></samp></dd>
+        <dt>containerEngine</dt><dd><samp>docker</samp></dd>
+        <dt>launchDir</dt><dd><samp>/workspaces/nextflow-training/hello-nextflow/nf-core-demo</samp></dd>
+        <dt>profile</dt><dd><samp>docker,test</samp></dd>
+        <dt>projectDir</dt><dd><samp>/home/codespace/.nextflow/assets/nf-core/demo</samp></dd>
+        <dt>revision</dt><dd><samp>master</samp></dd>
+        <dt>runName</dt><dd><samp>disturbed_majorana</samp></dd>
+        <dt>userName</dt><dd><samp>codespace</samp></dd>
+        <dt>workDir</dt><dd><samp>/workspaces/nextflow-training/hello-nextflow/nf-core-demo/work</samp></dd>
+    </dl>
